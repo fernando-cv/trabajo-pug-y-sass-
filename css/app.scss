@@ -165,7 +165,7 @@ h2 {
 }
 
 .testimonios {
-  padding-bottom  : 60px;
+  padding-bottom  : 100px;
   background-color: rgba(128, 128, 128, 0.062);
 
   .testimonios-container {
@@ -207,4 +207,42 @@ h2 {
   }
 }
 
-.contacto {}
+.contacto {
+  padding-bottom: 0;
+
+  .contacto-info-background {
+    margin-bottom        : 40px;
+    padding              : 60px 0;
+    background-image     : url(../img/bg-portada.jpg);
+    background-size      : cover;
+    background-attachment: fixed;
+
+    .contacto-info-container {
+      background: white;
+      width     : 90%;
+      max-width : 70rem;
+      margin    : 0 auto;
+      box-shadow: 1px 3px 3px rgb(grey, 0.08);
+      padding   : 7rem;
+
+      .contenido-info {
+        h4 {
+          font-size     : 12px;
+          font-weight   : 100;
+          text-transform: uppercase;
+        }
+
+        span {
+          color         : grey;
+          font-size     : 12px;
+          text-transform: uppercase;
+        }
+
+        a {
+          color    : grey;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
