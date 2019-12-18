@@ -1,18 +1,16 @@
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .background-header {
+  background-color: transparent;
   padding: 1rem 0;
-  border-bottom: 1px solid grey;
 }
 .background-header img {
-  width: 70px;
+  width: 150px;
+}
+.background-header ul {
+  margin-bottom: 0;
 }
 .background-header li {
   list-style: none;
-  font-size: 10px;
+  font-size: 15px;
   padding: 0 1.5rem;
 }
 .background-header a {
@@ -26,25 +24,27 @@ h2 {
   text-align: center;
 }
 .agenty-seccion h1 {
-  font-size: 30px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: 800;
   line-height: 50px;
+  margin-bottom: 30px;
 }
 .agenty-seccion p {
   color: black;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 .agenty-seccion a {
   color: white;
   text-decoration: none;
-  background-color: black;
-  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.836);
+  padding: 15px 80px;
   transition: all 0.3s ease;
 }
 .agenty-seccion a:hover {
-  background-color: rgba(0, 0, 0, 0.336);
+  background-color: rgba(0, 0, 0, 0.61);
   transition: all 0.3s ease;
 }
 
@@ -57,7 +57,7 @@ h2 {
   margin-bottom: 40px;
 }
 .service div h2 {
-  font-size: 25px;
+  font-size: 30px;
 }
 .service div p {
   font-size: 15px;
@@ -87,19 +87,21 @@ h2 {
   margin-bottom: 40px;
 }
 .galeria .galeria-titulo h2 {
-  font-size: 25px;
+  font-size: 30px;
 }
 .galeria .galeria-titulo p {
   font-size: 15px;
   color: grey;
 }
 .galeria .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 70px;
 }
 .galeria .img-container div {
-  width: 30%;
+  width: calc(100%/3);
   position: relative;
 }
 .galeria .img-container div .overlay {
@@ -134,14 +136,37 @@ h2 {
   opacity: 1;
 }
 
+.seccion-page {
+  background: #191919;
+  padding: 80px 0;
+}
+.seccion-page h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+.seccion-page a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  background-color: white;
+  padding: 10px 70px;
+}
+.seccion-page a:hover {
+  background-color: #c0bdbd;
+}
+
 .testimonios {
+  margin-top: 60px;
   padding-bottom: 100px;
   background-color: rgba(128, 128, 128, 0.062);
 }
 .testimonios .testimonios-container .testimonio {
-  margin-top: 20px;
   background-color: white;
-  padding: 40px 30px;
+  margin: 55px 45px;
+  padding: 50px 40px;
   box-shadow: 1px 3px 3px rgba(128, 128, 128, 0.08);
 }
 .testimonios .testimonios-container .testimonio img {
@@ -149,6 +174,7 @@ h2 {
 }
 .testimonios .testimonios-container .testimonio span {
   color: grey;
+  padding: 15px;
 }
 .testimonios .testimonios-container .testimonio span::after {
   content: "";
@@ -170,22 +196,26 @@ h2 {
 }
 
 .contacto {
+  margin-top: 60px;
   padding-bottom: 0;
 }
 .contacto .contacto-info-background {
-  margin-bottom: 40px;
-  padding: 60px 0;
+  margin-top: 5rem;
+  padding: 9rem 0;
   background-image: url(../img/bg-portada.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 .contacto .contacto-info-background .contacto-info-container {
   background: white;
-  width: 90%;
+  width: 70%;
   max-width: 70rem;
   margin: 0 auto;
   box-shadow: 1px 3px 3px rgba(128, 128, 128, 0.08);
-  padding: 7rem;
+  padding: 5rem;
+}
+.contacto .contacto-info-background .contacto-info-container .space-contacto {
+  margin-bottom: 60px;
 }
 .contacto .contacto-info-background .contacto-info-container .contenido-info h4 {
   font-size: 12px;
@@ -195,11 +225,19 @@ h2 {
 .contacto .contacto-info-background .contacto-info-container .contenido-info span {
   color: grey;
   font-size: 12px;
-  text-transform: uppercase;
 }
 .contacto .contacto-info-background .contacto-info-container .contenido-info a {
   color: grey;
   font-size: 12px;
+}
+
+footer {
+  background-color: #191919;
+  color: white;
+  height: 90px;
+}
+footer div {
+  padding-top: 9px;
 }
 
 /*# sourceMappingURL=app.css.map */

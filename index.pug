@@ -11,11 +11,11 @@ html(lang="es")
   body
     header.background-header.fixed-top
       .container: .row
-        div.text-center
+        div.col-12.d-flex.justify-content-between.align-items-center
           div
             img(src="img/logo.jpg", alt="")
           div
-            ul.align-items-center
+            ul.d-flex
               li: a(href="#") Inicio
               li: a(href="#") Qué ofrecemos
               li: a(href="#") Galería
@@ -23,7 +23,7 @@ html(lang="es")
               li: a(href="#") Contacto
     section.agenty-seccion
       .container: .row
-        div.text-center
+        div.text-center.col-12
           h1 vacations agenty
           p Lorem ipsum dolor sit amet consectetur adipisicing.
           a(href="#") Conoce más
@@ -32,15 +32,15 @@ html(lang="es")
         div.col-12.text-center
           h2 Nuestros servicios
           p Lorem ipsum dolor sit.
-        article.text-center.col-12
+        article.text-center.col-4
           i.fa.fa-users
           h3 Planes
           p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet?
-        article.text-center.col-12
+        article.text-center.col-4
           i.fa.fa-plane
           h3 Viajes
           p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet?
-        article.text-center.col-12
+        article.text-center.col-4
           i.fa.fa-building
           h3 Hoteles
           p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eveniet?
@@ -86,7 +86,7 @@ html(lang="es")
             div.datos-avatar
               h3 Nombre Imagen
               p Lorem, ipsum dolor.
-    section
+    section.seccion-page
       .container: .row
         div.col-12.text-center
           h2 Estamos listos para atenderte
@@ -97,22 +97,22 @@ html(lang="es")
           h2 Mira lo que dicen de nosotros
           p Lorem ipsum dolor sit amet consectetur adipisicing.
         div.row
-          div.testimonios-container.text-center
-            div.col-12.testimonio
+          div.testimonios-container.text-center.d-flex
+            div.testimonio
               div.text-center
                 img(src="img/foto1.jpg", alt="")
               div.text-center
                 span Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 h4 Lorem, ipsum dolor.
                 p Lorem, ipsum.
-            div.col-12.testimonio
+            div.testimonio
               div.text-center
                 img(src="img/foto1.jpg", alt="")
               div.text-center
                 span Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 h4 Lorem, ipsum dolor.
                 p Lorem, ipsum.
-            div.col-12.testimonio
+            div.testimonio
               div.text-center
                 img(src="img/foto1.jpg", alt="")
               div.text-center
@@ -124,31 +124,34 @@ html(lang="es")
         div.col-12.text-center
           h2 Contáctanos
           p Lorem ipsum dolor sit amet.
-        div.contacto-info-background
+      div.contacto-info-background
+        .container: .row
           div.contacto-info-container
-            div.d-flex.col-12.text-center.contenido-info
-              div.col-6.d-flex
+            div.d-flex.col-12.contenido-info.space-contacto
+              div.col-6.d-flex.flex-column
                 h4 teléfono
                 a(href="#") 555 555 555
                 a(href="#") 333 434 556
-              div.col-6
+              div.col-6.d-flex.flex-column
                 h4 dirección 
-                span calle 
+                span Calle 
                   a(href="#") 123 #10-10
-                span calle 
+                span Calle 
                   a(href="#") 123 #10-10
-            div.d-flex.col-12.text-center.contenido-info
-              div.col-6
+            div.d-flex.col-12.contenido-info
+              div.col-6.d-flex.flex-column
                 h4 email
                 a(href="#") hola@correo.com
                 a(href="#") contacto@correo.com
-              div.col-6
+              div.col-6.d-flex.flex-column
                 h4 contácto
                 a(href="#") Lun - Sab: 8AM - 6PM
                 a(href="#") Dom: 10AM - 1PM
     footer
-      div.text-end
-       span Todos los derechos reservados
+      .container: .row
+        div.col-12
+          div.text-center
+            span Todos los derechos reservados
 
 
 
